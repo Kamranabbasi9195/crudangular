@@ -1,0 +1,65 @@
+<div mat-dialog-title>Student data</div>
+<form [formGroup]="stdForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>FirstName</mat-label>
+        <input matInput type="text" placeholder="Ex. Kamran" formControlName="firstname" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>LastName</mat-label>
+        <input matInput type="text" placeholder="Ex. Abbasi" formControlName="lastname" />
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>FatherName</mat-label>
+        <input matInput type="text" placeholder="Ex. Zafar" formControlName="fathername" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Ex. Abbasi@gmail.com" formControlName="email" />
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Date of birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Select Gender</mat-label>
+          <mat-select formControlName="gen">
+            <mat-option *ngFor="let gen of genderlist" [value]="gen">
+              {{ gen }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="row" appearance="outline">
+      <mat-form-field>
+        <mat-label>Your Qualification</mat-label>
+        <mat-select formControlName="qual">
+          <mat-option *ngFor="let edu of education" [value]="edu">
+            {{ edu }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>University Name</mat-label>
+        <input matInput type="text" placeholder="Ex. Iqra University" formControlName="uniname" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button color="warn" type="button" mat-dialog-close="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update':'save'}}</button>
+  </div>
+</form>

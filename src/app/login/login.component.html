@@ -1,0 +1,34 @@
+<div fxLayoutAlign="center center" fxFlexFill fxLayout.lt-md="row" class="main-div">
+    <!-- Left Side: Mat Card -->
+  <div class="card" fxFlex.lt-md="40" fxLayoutAlign="center center">
+    <!-- FOR A LINE  -->
+    <mat-card class="heading-card">
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h3 class="sub-heading">Welcome to Npm</h3>
+        <hr class="divider">
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <p class="paragrafh">Nobility practice management (PM) system is ideal for <br> of any size. Manage appointments & schedules.<br>streamline billing, and store demographic data.</p>
+        <hr class="divider2">
+      </div>
+      
+    </mat-card>  
+    
+  </div>
+  <mat-card fxFlex.lt-md="40" fxFlex="25">
+    <mat-toolbar color="primary" style="text-align: center; display: block; padding: 10px;">
+      <span>NOBILITY</span>
+    </mat-toolbar>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+      <mat-form-field appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName="userName" placeholder="Username">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" placeholder="Password">
+      </mat-form-field>
+      <button mat-flat-button color="primary" type="submit">Login</button>
+    </form>
+  </mat-card>
+</div>  

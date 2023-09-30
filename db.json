@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ],
+  "student": [
+    {
+      "firstname": "Kamran Zafar",
+      "lastname": "Abbasi",
+      "fathername": "zafar ullah",
+      "email": "ffffffffffffffffff@ffffffff",
+      "dob": "2023-09-27T07:00:00.000Z",
+      "gen": "Femal",
+      "qual": "Graduation",
+      "uniname": "x",
+      "id": 10
+    },
+    {
+      "firstname": "Kamran",
+      "lastname": "Abbasi",
+      "fathername": "a",
+      "email": "kamranabbasi9145@outlook.com",
+      "dob": "2023-09-22T07:00:00.000Z",
+      "gen": "Male",
+      "qual": "Intermediate",
+      "uniname": "aa",
+      "id": 11
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "fathername": "",
+      "email": "",
+      "dob": "",
+      "gen": "",
+      "qual": "",
+      "uniname": "",
+      "id": 12
+    }
+  ]
+}

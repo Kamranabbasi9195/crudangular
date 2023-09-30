@@ -1,0 +1,70 @@
+.main-div mat-card {
+    padding: 0px;
+    
+}
+.main-div{
+    background: linear-gradient(to left, #017a3c, #01397a); /* Gradient from green to blue */
+  height: 100vh; /* This ensures the gradient covers the entire viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-with-line{
+    text-align: center;
+    padding: 10px;
+    
+}
+// for heading line hr//
+
+/* Styles for the heading container */
+.heading-container {
+    text-align: center;
+    padding: 1px;
+    padding-bottom:100px;
+  }
+  /* Styles for the heading card */
+.heading-card {
+    text-align: center;
+    padding: 10px; /* Add padding as needed */
+    background-color: #01397a;
+    background: transparent;
+  }
+  
+  /* Styles for the sub-heading (h3) */
+  .sub-heading {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    color: #ffffff; /* Set the text color */
+    margin: 10px;
+  }
+  
+  /* Styles for the divider (horizontal line) */
+  .divider {
+    width: 80%; /* Set the width of the line */
+    height: 2px; /* Set the height (thickness) of the line */
+    background-color: #ffffff; /* Set the line color */
+    margin:10px; /* Center the line horizontally and add margin as needed */
+  }
+  .paragrafh{
+    font-size: 1.2rem; /* Adjust the font size as needed */
+  color: #fff; /* Set the text color */
+  text-align: center; /* Center the text horizontally */
+  margin: 70px; /* Add margin as needed */
+  padding: 20px;
+  letter-spacing: 2px; /* Adjust letter spacing as needed */
+  line-height: 1.5; /* Adjust line height as needed (1.5 means 1.5 times the font size) */
+  }
+  .divider2 {
+    width: 100%; /* Set the width of the line */
+    height: 1px; /* Set the height (thickness) of the line */
+    background-color: #ffffff; /* Set the line color */
+    margin: 1px; /* Center the line horizontally and add margin as needed */
+  }
+  
+.login-form{
+    padding: 15px;
+
+}
+
+.card{
+    padding: 40px;
+}
